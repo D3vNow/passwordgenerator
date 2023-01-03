@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Outfit:wght@300;400;600&display=swap');
+    </style>
+    <title>Gerador de Senha | Desenvolvido por Vinícius Nobre</title>
+</head>
+
+<body>
+    <section class="card">
+        <div class="container">
+            <div class="logo">
+                <img class="password-logo" src="./assets/20945597.png" alt="">
+            </div>
+            <div class="container-title">
+                <h1>Gerador de Senha</h1>
+                <p>Desenvolvido por: Vinícius Nobre</p>
+            </div>
+            <div class="lorem">Using strong passwords helps protect your personal information, gives you peace of mind,
+                helps you comply with security standards, protects your online reputation, and keeps your financial
+                information safe.</div>
+            <div class="input-data">
+                <span>Tamanho da senha: </span> <span id="value"> caracteres.</span>
+                <input id="slider" class="slider" type="range" min="5" max="25" value="10">
+                <button id="button" class="button-cta" onclick="generatePassword()">Gerar senha</button>
+            </div>
+            <div class="container-password hide" id="container-password" onclick="copyPassword()">
+                <span class="container-password-title">Essa é a sua senha gerada: </span>
+                <span id="password" class="password"></span>
+                <span class="tooltip">Para copiar sua senha, basta clicar! 🍷🗿</span>
+            </div>
+        </div>
+
+    </section>
+    <script src="./js/pass-generator.js"></script>
+</body>
+
+</html>
